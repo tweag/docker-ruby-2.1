@@ -1,7 +1,7 @@
 FROM centos
 MAINTAINER PromptWorks <team@promptworks.com>
 
-RUN export RUBY_INSTALL_VERSION=0.3.4 && \
+RUN export RUBY_INSTALL_VERSION=0.4.0 && \
     export RUBY_VERSION=2.1.0 && \
     cd /tmp && \
     yum list installed | cut -f 1 -d " " | uniq | sort > /tmp/pre && \
