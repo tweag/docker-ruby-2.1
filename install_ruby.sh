@@ -1,12 +1,12 @@
 #!/bin/bash -ex
 
-export RUBY_INSTALL_VERSION=0.4.0
+export RUBY_INSTALL_VERSION=0.4.2
 export RUBY_VERSION=2.1.1
 
 cd /tmp
 
 yum list installed | cut -f 1 -d " " | uniq | sort > /tmp/pre
-yum install git -y
+yum install bzip2 git tar wget -y
 
 wget -O ruby-install-$RUBY_INSTALL_VERSION.tar.gz \
   https://github.com/postmodern/ruby-install/archive/v$RUBY_INSTALL_VERSION.tar.gz
