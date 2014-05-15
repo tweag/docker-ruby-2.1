@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 
-export RUBY_INSTALL_VERSION=0.4.2
-export RUBY_VERSION=2.1.1
+export RUBY_INSTALL_VERSION=0.4.3
+export RUBY_VERSION=2.1.2
 
 cd /tmp
 
